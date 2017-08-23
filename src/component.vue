@@ -1,0 +1,63 @@
+<template lang="pug">
+.one-size-container(:style="style")
+  slot
+</template>
+
+<script>
+import numeral from 'numeral'
+
+export default {
+  props: {
+    width: {
+      type: Number,
+      default: 375
+    },
+    height: {
+      type: Number,
+      default: 603
+    },
+    maxRatio: {
+      type: Number,
+      default: 1
+    }
+  },
+  data () {
+    return {
+      style: this.getStyle()
+    }
+  },
+  mounted () {
+    window.addEventListener('resize', () => {
+      this.style = this.getStyle()
+    })
+  },
+  methods: {
+    getStyle () {
+      const { width, height, maxRatio } = this
+      const windowSize = {
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight
+      }
+      var ratioX = numeral(windowSize.width).divide(width).value()
+      var ratioY = numeral(windowSize.height).divide(height).value()
+      var ratio = ratioX < ratioY ? ratioX : ratioY
+      if (ratio > maxRatio) ratio = maxRatio
+      var left = numeral(windowSize.width).subtract(numeral(width).multiply(ratio).value()).divide(2).value()
+      var top = numeral(windowSize.height).subtract(numeral(height).multiply(ratio).value()).divide(2).value()
+      if (left < 0) left = 0
+      if (top < 0) top = 0
+      return {
+        'position': 'absolute',
+        'left': 0,
+        'top': 0,
+        'transform-origin': 'left top',
+        'width': `${width}px`,
+        'height': `${height}px`,
+        'transform': `scale(${ratio},${ratio})`,
+        'left': `${left}px`,
+        'top': `${top}px`
+      }
+    }
+  }
+}
+</script>
