@@ -1,4 +1,5 @@
 # vue-one-size
+[![NPM version](https://img.shields.io/npm/v/vue-one-size.svg?style=flat)](https://npmjs.com/package/vue-one-size) [![NPM downloads](https://img.shields.io/npm/dm/vue-one-size.svg?style=flat)](https://npmjs.com/package/vue-one-size)
 One size fits on all screens.
 
 [Demo](https://royl-design.github.io/vue-one-size/)
