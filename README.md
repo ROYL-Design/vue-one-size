@@ -34,9 +34,7 @@ Or use it locally:
 </template>
 
 <script>
-import OneSizeContainer from 'vue-one-size'
-Vue.use(OneSizeContainer)
-
+import { OneSizeContainer } from 'vue-one-size'
 export default {
   ...
   components: { OneSizeContainer }
