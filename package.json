@@ -12,14 +12,21 @@
   "files": [
     "dist"
   ],
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "/vue-one-size/"
+  },
   "devDependencies": {
     "bili": "^0.17.4",
+    "gh-pages": "^1.0.0",
+    "poi": "^9.3.0",
     "rollup-plugin-vue": "^2.4.1"
   },
   "scripts": {
     "build": "bili --plugins vue",
     "build:example": "poi build",
     "dev": "poi",
-    "deploy": "npm run build:example && gh-pages -d example/dist"
+    "deploy": "poi build && gh-pages -d example/dist"
   }
 }

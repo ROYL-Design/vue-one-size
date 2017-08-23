@@ -6,3 +6,5 @@ export default {
   },
   OneSizeContainer
 }
+
+export { OneSizeContainer }
