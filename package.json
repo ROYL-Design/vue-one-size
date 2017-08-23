@@ -1,6 +1,6 @@
 {
   "name": "vue-one-size",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "One size fits on all screens",
   "main": "dist/vue-one-size.common.js",
   "repository": "git@github.com:ROYL-Design/vue-one-size.git",
@@ -27,6 +27,7 @@
     "build": "bili --plugins vue",
     "build:example": "poi build",
     "dev": "poi",
-    "deploy": "poi build && gh-pages -d example/dist"
+    "deploy": "poi build && gh-pages -d example/dist",
+    "deploy:npm": "yarn build && yarn publish"
   }
 }
