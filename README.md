@@ -1,6 +1,8 @@
 # vue-one-size
 One size fits on all screens.
 
+[Demo](https://royl-design.github.io/vue-one-size/)
+
 ## Install
 
 ```bash
