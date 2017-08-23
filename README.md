@@ -41,3 +41,32 @@ export default {
 }
 </script>
 ```
+
+## Props
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>width</td>
+      <td>375</td>
+      <td>Width of the page.</td>
+    </tr>
+    <tr>
+      <td>height</td>
+      <td>603</td>
+      <td>Height of the page.</td>
+    </tr>
+    <tr>
+      <td>maxRatio</td>
+      <td>1</td>
+      <td>The maximal ratio to scale up.</td>
+    </tr>
+  </tbody>
+</table>
