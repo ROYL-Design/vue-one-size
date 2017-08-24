@@ -33,9 +33,11 @@
 </template>
 
 <script>
-import { OneSizeContainer } from '../src/index.js'
+import OneSize from '../src/index.js'
 
 export default {
-  components: { OneSizeContainer }
+  components: {
+    OneSizeContainer: OneSize.container
+  }
 }
 </script>

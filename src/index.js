@@ -4,7 +4,5 @@ export default {
   install: function (Vue) {
     Vue.component('OneSizeContainer', OneSizeContainer)
   },
-  OneSizeContainer
+  container: OneSizeContainer
 }
-
-export { OneSizeContainer }

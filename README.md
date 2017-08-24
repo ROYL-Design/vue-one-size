@@ -38,10 +38,13 @@ Or use it locally:
 </template>
 
 <script>
-import { OneSizeContainer } from 'vue-one-size'
+import OneSize from 'vue-one-size'
+
 export default {
   ...
-  components: { OneSizeContainer }
+  components: {
+    OneSizeContainer: OneSize.container
+  }
 }
 </script>
 ```
