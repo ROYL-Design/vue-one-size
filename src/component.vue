@@ -48,8 +48,6 @@ export default {
       if (top < 0) top = 0
       return {
         'position': 'absolute',
-        'left': 0,
-        'top': 0,
         'transform-origin': 'left top',
         'width': `${width}px`,
         'height': `${height}px`,
