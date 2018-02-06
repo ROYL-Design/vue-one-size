@@ -1,6 +1,6 @@
 {
   "name": "vue-one-size",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "One size fits on all screens",
   "main": "dist/vue-one-size.common.js",
   "repository": "git@github.com:ROYL-Design/vue-one-size.git",
