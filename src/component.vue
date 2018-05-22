@@ -19,6 +19,10 @@ export default {
     maxRatio: {
       type: Number,
       default: 1
+    },
+    resize: {
+      type: Boolean,
+      default: true
     }
   },
   data () {
@@ -28,7 +32,9 @@ export default {
   },
   mounted () {
     window.addEventListener('resize', () => {
-      this.style = this.getStyle()
+      if (this.resize) {
+        this.style = this.getStyle()
+      }
     })
   },
   methods: {
