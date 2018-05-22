@@ -18,13 +18,13 @@
     "homepage": "/vue-one-size/"
   },
   "devDependencies": {
-    "bili": "^3.0.3",
+    "bili": "^0.17.7",
     "gh-pages": "^1.0.0",
     "poi": "^9.3.0",
     "rollup-plugin-vue": "^2.4.1"
   },
   "scripts": {
-    "build": "bili --plugins vue --format umd",
+    "build": "bili --plugins vue",
     "build:example": "poi build",
     "dev": "poi",
     "deploy": "poi build && gh-pages -d example/dist",
