@@ -75,5 +75,10 @@ export default {
       <td>1</td>
       <td>The maximal ratio to scale up.</td>
     </tr>
+    <tr>
+      <td>resize</td>
+      <td>true</td>
+      <td>Whether to resize when window resized.</td>
+    </tr>
   </tbody>
 </table>

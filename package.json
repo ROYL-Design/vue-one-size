@@ -1,6 +1,6 @@
 {
   "name": "vue-one-size",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "One size fits on all screens",
   "main": "dist/vue-one-size.common.js",
   "repository": "git@github.com:ROYL-Design/vue-one-size.git",
@@ -18,13 +18,13 @@
     "homepage": "/vue-one-size/"
   },
   "devDependencies": {
-    "bili": "^0.17.7",
+    "bili": "^3.0.3",
     "gh-pages": "^1.0.0",
     "poi": "^9.3.0",
     "rollup-plugin-vue": "^2.4.1"
   },
   "scripts": {
-    "build": "bili --plugins vue",
+    "build": "bili --plugins vue --format umd",
     "build:example": "poi build",
     "dev": "poi",
     "deploy": "poi build && gh-pages -d example/dist",
